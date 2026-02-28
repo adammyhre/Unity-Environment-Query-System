@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7625483038945212512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724f4b51925759e488d85bde2f382247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Tests.DistanceToTargetTest
+  decayParam: 5
+  preferFar: 0
+--- !u!114 &-5145696251007478024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f40b464723d37342a9cee137b179c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Generators.GridGenerator
+  size: 10
+  divisions: 10
+  noise: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5959b11b6c7ded408ff6bf64e6ee804, type: 3}
+  m_Name: EQS_Example_AttackPosition
+  m_EditorClassIdentifier: EQS::EQS.EnvironmentQueryAsset
+  generator: {fileID: -5145696251007478024}
+  tests:
+  - {fileID: -7625483038945212512}
+  - {fileID: 6563770093133015625}
+  agentStrategy: 0
+  waitDuration: 1
+  runOnce: 0
+--- !u!114 &6563770093133015625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacb924d21d4e65419686a4668044732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Tests.LineOfSightTest
+  blockLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  requireLos: 1
+  fromPointToTarget: 0
