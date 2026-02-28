@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5959b11b6c7ded408ff6bf64e6ee804, type: 3}
+  m_Name: EQS_Example_FindCover
+  m_EditorClassIdentifier: EQS::EQS.EnvironmentQueryAsset
+  generator: {fileID: 8582011292067279086}
+  tests:
+  - {fileID: 8263052907058627662}
+  agentStrategy: 0
+  waitDuration: 1
+  runOnce: 0
+--- !u!114 &8263052907058627662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacb924d21d4e65419686a4668044732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Tests.LineOfSightTest
+  blockLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  requireLos: 0
+  fromPointToTarget: 1
+--- !u!114 &8582011292067279086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00552215076184f4e83cf31e50f985dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Generators.CircleGenerator
+  radius: 25
+  pointCount: 56

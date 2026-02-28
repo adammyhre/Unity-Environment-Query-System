@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-922340756801560875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4e2b14dfae0fa42affc925af0f69e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Tests.DistanceFromQuerierTest
+  idealDistance: 8
+  tolerance: 3
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5959b11b6c7ded408ff6bf64e6ee804, type: 3}
+  m_Name: EQS_Example_PatrolPoint
+  m_EditorClassIdentifier: EQS::EQS.EnvironmentQueryAsset
+  generator: {fileID: 3890984057192682300}
+  tests:
+  - {fileID: -922340756801560875}
+  agentStrategy: 1
+  waitDuration: 1
+  runOnce: 0
+--- !u!114 &3890984057192682300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddd87abdb9a2434486aa7d66c0965f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EQS::EQS.Generators.NavMeshSampleGenerator
+  radius: 15
+  sampleCount: 64
+  maxSampleDistance: 5
+  areaMask: -1
